@@ -39,7 +39,7 @@ spec:
         ports:
         - name: http-ui
           containerPort: 8443
-		env:
+        env:
           - name: APP_CONFIG_PROFILE
             value: "Docker"
           - name: BW_PROFILE
