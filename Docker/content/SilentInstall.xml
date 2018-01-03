@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<silentinstall>
+<!-- Database Settings -->
+<arg name="db_type" value="mssql"/>
+<arg name="db_host" value="dockerjdbchost"/>
+<arg name="db_port" value="1433"/>
+<arg name="db_ssl" value=""/>
+<arg name="db_ciphers" value=""/>
+<arg name="db_name" value="docker"/>
+<arg name="db_oracle_type" value=""/>
+<arg name="db_user" value="docker"/>
+<arg name="db_password" value="$$ENCODED:T1to9mS0H8ohh9JMkFKyzLTpy3U="/>
+<arg name="db_drivertype" value="microsoft"/>
+<arg name="db_url" value=""/>
+<arg name="db_driverfilename" value="sqljdbc4.jar"/>
+<!-- MFT Server Port Settings -->
+<arg name="httpsport" value="7443"/>
+<arg name="httpport" value="7080"/>
+<arg name="shutdownport" value="7005"/>
+<arg name="ajpport" value="7009"/>
+<!-- Keystore Settings -->
+<arg name="keystore" value="keystore.jks"/>
+<arg name="keystorepassword" value="$$ENCODED:SYkM5XIo0Gi7LzasqlTrJU8Svjw="/>
+<arg name="keystorealias" value="cfcc"/>
+<!-- Miscellaneous Settings -->
+<arg name="admininstall" value="false"/>
+<arg name="hostname" value="dockerhostname"/>
+<arg name="context" value="cfcc"/>
+<arg name="adminuser" value="admin"/>
+<arg name="adminpassword" value="$$ENCODED:t/BpPeuVpPXiGYY7ZBfbqf0gTkE="/>
+<arg name="allow_root" value="true"/>
+<arg name="win_service" value="false"/>
+<arg name="fips" value="false"/>
+</silentinstall>

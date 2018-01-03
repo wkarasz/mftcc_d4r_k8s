@@ -1,0 +1,47 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mftcc-svc
+  labels:
+    app: mftcc-svc
+spec:
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 8443
+    targetPort: http-ui
+    nodePort: 30191
+  selector:
+    app: mftcc
+    tier: backend
+---
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: mftcc-dply
+  labels:
+    app: mftcc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mftcc
+  template:
+    metadata:
+      labels:
+        app: mftcc
+        tier: backend
+    spec:
+      containers:
+      - name: mftcc
+        image: tibco/mftcc:8.0
+        ports:
+        - name: http-ui
+          containerPort: 8443
+        command: ["/bin/sh"]
+        args: ["-c", "while true; do echo hello; sleep 10;done"]
+        resources:
+          requests:
+            memory: "1024Mi"
+        stdin: true
+        tty: true

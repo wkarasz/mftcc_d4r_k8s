@@ -1,0 +1,1 @@
+An alternative JDK8 version may be used, however, corresponding updates/changes will be required in install_prep1.sh
