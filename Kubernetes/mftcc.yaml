@@ -39,6 +39,15 @@ spec:
         ports:
         - name: http-ui
           containerPort: 8443
+		env:
+          - name: APP_CONFIG_PROFILE
+            value: "Docker"
+          - name: BW_PROFILE
+            value: "Docker"
+          - name: CONSUL_SERVER_URL
+            value: "http://172.16.22.130:30090"
+          - name: BW_LOGLEVEL
+            value: "INFO"
         resources:
           requests:
             memory: "1024Mi"
