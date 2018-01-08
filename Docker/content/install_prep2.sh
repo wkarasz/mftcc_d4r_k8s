@@ -22,7 +22,7 @@ sleep 120
 
 # start service in background here
 sed -i -- "s/Xms512m/Xms256m/g" /opt/mftcc/server/bin/setenv.sh
-sed -i -- "s/Xmx4096m/Xmx1024m/g" /opt/mftcc/server/bin/setenv.sh 
+sed -i -- "s/Xmx4096m/Xmx512m/g" /opt/mftcc/server/bin/setenv.sh 
 nohup /opt/mftcc/server/bin/startup.sh &
 mv /content/start_mft.sh /opt/mftcc/server/bin/; chmod 755 /opt/mftcc/server/bin/start_mft.sh
 mv /content/stop_mft.sh /opt/mftcc/server/bin/; chmod 755 /opt/mftcc/server/bin/stop_mft.sh
