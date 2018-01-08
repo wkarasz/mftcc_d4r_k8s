@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
+	<globalVariables>
+		<globalVariable>
+			<name>//mftCCdocker.module//DBuser</name>
+			<value>#DBuser#</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//mftCCdocker.module//DBpass</name>
+			<value>#DBpass#</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Password</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>//mftCCdocker.module//jdbcURL</name>
+			<value>#jdbcURL#</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>true</isOverride>
+		</globalVariable>
+	</globalVariables>
+</repository>
