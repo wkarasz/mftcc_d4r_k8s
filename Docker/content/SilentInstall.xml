@@ -14,10 +14,10 @@
 <arg name="db_url" value=""/>
 <arg name="db_driverfilename" value="sqljdbc4.jar"/>
 <!-- MFT Server Port Settings -->
-<arg name="httpsport" value="7443"/>
-<arg name="httpport" value="7080"/>
-<arg name="shutdownport" value="7005"/>
-<arg name="ajpport" value="7009"/>
+<arg name="httpsport" value="8443"/>
+<arg name="httpport" value="8080"/>
+<arg name="shutdownport" value="8005"/>
+<arg name="ajpport" value="8009"/>
 <!-- Keystore Settings -->
 <arg name="keystore" value="keystore.jks"/>
 <arg name="keystorepassword" value="$$ENCODED:SYkM5XIo0Gi7LzasqlTrJU8Svjw="/>
